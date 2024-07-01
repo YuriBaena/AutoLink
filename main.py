@@ -10,7 +10,6 @@ import time
 
 
 def linkedin(email, senha, conectar):
-
     aba1 = webdriver.Chrome()
 
     aba1.get("https://br.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F")
@@ -31,8 +30,8 @@ def linkedin(email, senha, conectar):
     time.sleep(5)
 
     '''Se precisar'''
-    #codigo = pega_codigo_do_email()
-    #print(codigo)
+    # codigo = pega_codigo_do_email()
+    # print(codigo)
 
     pesquisa = aba1.find_element(By.XPATH, '//*[@id="global-nav-typeahead"]/input')
     pesquisa.send_keys(conectar)
@@ -40,21 +39,24 @@ def linkedin(email, senha, conectar):
 
     time.sleep(5)
 
-    pessoas = aba1.find_element(By.XPATH, '/html/body/div[5]/div[3]/div[2]/div/div[1]/div/div/div/section/ul/li[4]/button')
+    pessoas = aba1.find_element(By.XPATH,
+                                '/html/body/div[5]/div[3]/div[2]/div/div[1]/div/div/div/section/ul/li[4]/button')
     pessoas.click()
 
     time.sleep(5)
+
 
 def pega_codigo_do_email():
     global codigo
     aba2 = webdriver.Chrome()
 
-    #Abre outra aba para email
-    aba2.get("https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=154&ct=1719844956&rver=7.0.6738.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26RpsCsrfState%3d70262033-e4ce-d0f1-ba33-4b9af451ca2f&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c")
+    # Abre outra aba para email
+    aba2.get(
+        "https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=154&ct=1719844956&rver=7.0.6738.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26cobrandid%3dab0455a0-8d03-46b9-b18b-df2f57b9e44c%26RpsCsrfState%3d70262033-e4ce-d0f1-ba33-4b9af451ca2f&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c")
 
     time.sleep(2)
 
-    #Encontra campo de email e preenche
+    # Encontra campo de email e preenche
     email_input = aba2.find_element(By.XPATH, '//*[@id="i0116"]')
     email_input.send_keys("yuribaena@hotmail.com")
 
@@ -72,7 +74,7 @@ def pega_codigo_do_email():
 
     time.sleep(2)
 
-    #Nao continuar conectado
+    # Nao continuar conectado
     botao = aba2.find_element(By.XPATH, '//*[@id="declineButton"]')
     botao.click()
 
