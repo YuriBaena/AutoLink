@@ -39,6 +39,6 @@ def linkedin(email, senha, chave):
 email_linkedin = input("Diga o email do seu LinkedIn: ")
 senha_linkedin = input("Diga a senha do LinkeIn: ")
 
-conectar = "Python"#input("Diga algo que remeta a pessoas que deseja se conectar: ")
+conectar = input("Diga algo que remeta a pessoas que deseja se conectar: ")
 
 linkedin(email_linkedin, senha_linkedin, conectar)
