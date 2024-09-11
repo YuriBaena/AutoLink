@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+import pyautogui
 import time
 
 
@@ -10,6 +11,7 @@ def linkedin(email, senha, x):
         aba1 = webdriver.Chrome()
 
         aba1.get("https://br.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F")
+        aba1.maximize_window()
 
         time.sleep(5)
 
@@ -36,8 +38,7 @@ def linkedin(email, senha, x):
 
         time.sleep(3)
 
-        enviar = aba1.find_element(By.XPATH, '//*[@id="ember284"]')
-        enviar.click()
+        pyautogui.click(1157, 715)
 
         time.sleep(5)
 
@@ -73,3 +74,5 @@ with open('textos.txt', 'r', encoding='utf-8') as arquivo:
         post = linha.strip()
 
         linkedin(email_linkedin, senha_linkedin, post)
+
+        time.sleep(7200)
