@@ -1,0 +1,100 @@
+Algoritmo
+Compilador
+Variável
+Função
+Objeto
+Classe
+Herança
+Polimorfismo
+Encapsulamento
+Abstração
+Framework
+Biblioteca
+IDE
+Depuração
+Integração
+Modularização
+Programação
+Recursão
+Loop
+Condicional
+Array
+Lista
+Fila
+Pilha
+Grafo
+Hashing
+Tabela hash
+Pseudocódigo
+Inteligência Artificial
+Machine Learning
+Deep Learning
+Redes Neurais
+Big Data
+Cloud Computing
+Virtualização
+DevOps
+Frontend
+Backend
+Full Stack
+Banco de Dados
+SQL
+NoSQL
+MongoDB
+PostgreSQL
+MySQL
+JSON
+XML
+API
+REST
+SOAP
+HTTP
+HTTPS
+Servidor
+Cliente
+Protocolo
+Segurança
+Criptografia
+Firewall
+Autenticação
+Token
+Sessão
+Blockchain
+Bitcoin
+Sistema Operacional
+Kernel
+Shell
+Bash
+Linux
+Windows
+MacOS
+Driver
+Virtual Machine
+Docker
+Kubernetes
+Microserviços
+Arquitetura
+MVC
+MVP
+Padrões de Projeto
+Refatoração
+Teste Unitário
+Teste de Integração
+CI/CD
+Versionamento
+Git
+GitHub
+Bitbucket
+Repositório
+Branch
+Merge
+Pull Request
+WebSocket
+Threads
+Concorrência
+Paralelismo
+POO (Programação Orientada a Objetos)
+Funcional
+Assembly
+Compilação
+Interface
