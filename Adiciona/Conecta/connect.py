@@ -138,8 +138,8 @@ def main(mail, psw, topico):
     linkedin(mail, psw, chave)
 
 
-email = "yuribaena@hotmail.com"  # input("Diga o email do seu LinkedIn: ")
-senha = "Mayy2016!"  # input("Diga a senha do LinkeIn: ")
+email = input("Diga o email do seu LinkedIn: ")
+senha = input("Diga a senha do LinkeIn: ")
 
 
 with open("topicos.txt", "r") as arq:
