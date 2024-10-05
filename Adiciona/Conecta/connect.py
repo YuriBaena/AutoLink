@@ -138,7 +138,7 @@ def main(mail, psw, topico):
     linkedin(mail, psw, chave)
 
 
-email = input("Diga o email do seu LinkedIn: ")
+email =  input("Diga o email do seu LinkedIn: ")
 senha = input("Diga a senha do LinkeIn: ")
 
 
